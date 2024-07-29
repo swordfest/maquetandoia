@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>PlataformIA</title>
+  </head>
+  <body class="bg-[#111111]">
+    <nav class="flex w-full h-[72px] justify-center items-center absolute">
+      <div
+        class="Wrapper container flex w-full h-full justify-between items-center shrink-0 px-4 md:px-0 py-6"
+      >
+        <div class="logo w-[181px] h-[41.162px] shrink-0"></div>
+        <div
+          class="menu-wrapper hidden md:flex gap-6 justify-center items-center self-stretch px-[22px] py-0 text-white"
+        >
+          <!-- class="hover:before:content-[''] before:absolute before:bottom-1 before:border before:w-10 before:border-white" -->
+          <a
+            class="before:content-[''] before:absolute before:bottom-1 before:border before:w-0 before:group-hover:w-24 before:border-white"
+            href="#"
+            >Documentación</a
+          >
+          <a href="#">Acerca de</a>
+          <a href="#">PlataformIA</a>
+        </div>
+        <div class="menu-mobile md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-menu-4 stroke-white"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M7 6h10" />
+            <path d="M4 12h16" />
+            <path d="M7 12h13" />
+            <path d="M7 18h10" />
+          </svg>
+        </div>
+      </div>
+    </nav>
+    <main
+      class="relative w-full h-auto pt-20 px-4 xl:px-0 gap-16 flex flex-col overflow-hidden"
+    >
+      <div
+        class="fixed gradiente-bg animate-spin-slow-grad opacity-60 w-full h-screen top-0 left-0 overflow-clip -z-20"
+      ></div>
+      <div
+        class="fixed noise w-full h-screen top-0 left-0 -z-10 backdrop-blur-3xl"
+      ></div>
+      <header class="w-full h-[620px] flex items-center justify-center">
+        <div class="wrapper-header w-full flex flex-col items-center gap-6">
+          <div class="logo-wrapper flex gap-2">
+            <svg
+              class="animate-spin-slow origin-center"
+              width="54"
+              height="50"
+              viewBox="0 0 54 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <g mask="url(#mask0_21_10)">
+                <path
+                  d="M42.6363 6.80856L39.7756 11.7853L47.0066 24.3435C47.0593 24.4387 47.0911 24.5554 47.0911 24.6612C47.0911 24.7671 47.0593 24.8835 47.0066 24.979L39.7756 37.5477L42.6363 42.5244L52.9181 24.6612L42.6363 6.79798V6.80856ZM38.6673 11.1394L41.5281 6.16265H35.8066L32.9458 11.1394H38.6779H38.6673ZM32.9352 12.4312L39.6173 24.0258H45.3388L38.6673 12.4312H32.9352ZM38.6673 36.9123L45.3388 25.3071H39.6173L32.9352 36.9123H38.6673ZM32.9352 38.2042L35.796 43.1598H41.5175L38.6567 38.2042H32.9246H32.9352ZM13.5436 44.3881C13.4275 44.3881 13.3219 44.3562 13.2269 44.3033C13.1319 44.2504 13.0474 44.1656 12.9946 44.0704L5.75312 31.5015H0.031669L10.3134 49.3542H30.8662L28.0054 44.3881H13.5541H13.5436ZM29.1139 43.7421L31.9746 48.7083L34.8354 43.7315L31.9746 38.7548L29.1139 43.7315V43.7421ZM30.8662 38.1196H17.5233L14.6625 43.0962H28.0054L30.8662 38.1196ZM16.4043 37.4842L9.7222 25.879L6.86151 30.8556L13.5436 42.4608L16.4043 37.4842ZM0.021113 30.2098H5.74257L8.60328 25.2329H2.89239L0.021113 30.2098ZM12.963 5.29437C13.0158 5.19908 13.1002 5.11438 13.1952 5.06142C13.2902 5.00848 13.4063 4.97671 13.5119 4.97671H27.9845L30.8452 0H10.2817L0 17.8632H5.72145L12.9419 5.30496L12.963 5.29437ZM8.60328 24.1213L5.74257 19.1445H0.021113L2.88183 24.1213H8.60328ZM13.5225 6.90387L6.85096 18.4985L9.7117 23.4752L16.3832 11.8806L13.5225 6.90387ZM27.9951 6.25796H14.6308L17.4916 11.2347H30.8556L27.9951 6.25796ZM31.9746 10.5887L34.8248 5.62262L31.9746 0.645912L29.1139 5.61204L31.9746 10.5887Z"
+                  fill="white"
+                />
+              </g>
+            </svg>
+            <svg
+              width="180"
+              height="43"
+              viewBox="0 0 235 43"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M91.7112 12.0481C87.9602 12.0481 84.8322 13.8478 82.8142 17.0106H82.2542V13.1237H77.6152V41.5999H82.2542V24.9656C82.2542 20.003 86.3432 16.2865 91.0982 16.2865C95.8532 16.2865 98.8222 19.7795 98.8222 24.5717V41.5999H103.471V24.5717C103.471 17.3514 98.8862 12.0481 91.7222 12.0481H91.7112Z"
+                fill="white"
+              />
+              <path
+                d="M57.8578 11.9846C48.9608 11.9846 42.6948 18.3529 42.6948 27.3195C42.6948 36.2863 48.9608 42.7185 57.8578 42.7185C66.7548 42.7185 73.0208 36.3502 73.0208 27.3195C73.0208 18.289 66.7018 11.9846 57.8578 11.9846ZM57.8578 38.4907C51.6978 38.4907 47.3338 33.8049 47.3338 27.3302C47.3338 20.8555 51.6978 16.223 57.8578 16.223C64.0178 16.223 68.3718 20.8981 68.3718 27.3302C68.3718 33.7624 63.9548 38.4907 57.8578 38.4907Z"
+                fill="white"
+              />
+              <path
+                d="M34.2728 29.2581C32.318 34.6252 26.8446 38.4909 20.8216 38.4909C11.9247 38.4909 5.48982 31.4411 5.48982 21.6865C5.48982 11.9318 11.8719 4.93522 20.8216 4.93522C27.0664 4.93522 32.635 9.06711 34.3363 14.8603H39.514C37.559 6.51131 29.7187 0.419922 20.8216 0.419922C8.95563 0.419922 0.396726 9.33331 0.396726 21.6758C0.343926 34.0289 8.95563 42.9957 20.8216 42.9957C29.6553 42.9957 37.485 37.1919 39.45 29.2474H34.2728V29.2581Z"
+                fill="white"
+              />
+              <path
+                d="M116.044 34.092V16.8402H123.313V13.1236H116.044L116.097 3.93335H112.462L111.394 13.1236H106.809V16.8402H111.394V34.2623C111.394 39.2781 114.417 42.6647 119.171 42.6647C120.566 42.6647 122.415 42.3879 123.757 41.9299V38.1494C122.69 38.4901 121.242 38.7139 120.397 38.7139C117.713 38.7139 116.033 36.7969 116.033 34.092H116.044Z"
+                fill="white"
+              />
+              <path
+                d="M195.481 29.6932C195.481 34.709 191.392 38.3723 186.637 38.3723C181.882 38.3723 178.977 34.9326 178.977 30.0871V13.1123H174.338V30.0871C174.338 37.3605 178.871 42.6108 186.088 42.6108C189.776 42.6108 192.967 40.811 194.932 37.7014H195.492V41.5883H200.141V13.1123H195.492V29.6932H195.481Z"
+                fill="white"
+              />
+              <path
+                d="M156.832 12.0481C153.081 12.0481 149.953 13.8478 147.935 17.0106H147.375V13.1237H142.736V41.5999H147.375V24.9656C147.375 20.003 151.464 16.2865 156.219 16.2865C160.974 16.2865 163.943 19.7795 163.943 24.5717V41.5999H168.593V24.5717C168.593 17.3514 164.007 12.0481 156.843 12.0481H156.832Z"
+                fill="white"
+              />
+              <path
+                d="M134.779 13.1123H130.141V41.5883H134.779V13.1123Z"
+                fill="white"
+              />
+              <path
+                d="M234.589 27.0428C234.589 18.2996 228.377 11.9846 219.764 11.9846C211.153 11.9846 204.771 18.2996 204.771 26.9895C204.771 36.1265 211.153 42.7185 219.987 42.7185C226.253 42.7185 231.346 39.7898 233.639 34.9338L229.783 32.9637C227.997 36.3502 224.298 38.4907 220.103 38.4907C214.344 38.4907 210.203 34.6569 209.525 28.9063H234.537C234.589 28.2886 234.589 27.607 234.589 27.0428ZM209.579 24.7851C210.361 19.6521 214.334 16.2124 219.544 16.2124C224.752 16.2124 228.885 19.6521 229.729 24.7851H209.59H209.579Z"
+                fill="white"
+              />
+              <path
+                d="M132.485 1.0481C130.53 1.0481 129.125 2.40055 129.125 4.31743C129.125 6.23431 130.52 7.70391 132.485 7.70391C134.45 7.70391 135.782 6.29821 135.782 4.31743C135.782 2.33665 134.44 1.0481 132.485 1.0481Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+
+          <h1
+            class="text-5xl xl:text-7xl font-extrabold text-center bg-gradient-to-b from-white to-slate-500 text-transparent bg-clip-text py-3"
+          >
+            Asistente de Código.
+            <br />
+            Líder compatible con PlataformIA
+          </h1>
+          <button
+            class="flex w-[196px] justify-center items-center border bg-gray-900 px-6 py-4 rounded-xl border-solid border-[#204E56] text-white hover:bg-black transition-colors"
+          >
+            Obténlo
+          </button>
+        </div>
+      </header>
+      <section
+        class="w-full h-auto xl:min-h-[640px] text-white flex items-center justify-center py-4"
+      >
+        <div
+          class="wrapper-other w-full xl:w-[1200px] flex flex-col items-center gap-10"
+        >
+          <div class="flex flex-col gap-2">
+            <h1
+              class="bg-gradient-to-b from-white to-slate-500 text-transparent bg-clip-text text-5xl font-extrabold text-center py-3"
+            >
+              Una herramienta impulsada por Inteligencia Artificial
+            </h1>
+            <h3 class="text-center text-lg text-white">
+              <span class="font-black">Continue</span> potencia tu programación al proporcionar sugerencias y completaciones de código impulsadas por IA directamente en tu editor, haciendo el desarrollo más rápido y eficiente
+            </h3>
+          </div>
+          <div
+            class="bg-ide bg-no-repeat bg-contain bg-center w-[360px] md:w-[768px] md:h-[384px] xl:w-[1134px] h-[180px] xl:h-[568px]"
+          ></div>
+        </div>
+      </section>
+      <section
+        class="detalles-asistente w-full min-h-[640px] ext-white flex items-center justify-center"
+      >
+        <div
+          class="wrapper-detalles w-full xl:w-[1200px] flex flex-col items-center gap-6 py-8"
+        >
+          <h1
+            class="text-5xl font-extrabold text-center bg-gradient-to-b from-white to-slate-500 text-transparent bg-clip-text py-3"
+          >
+            Cada detalle de tu asistente de código IA
+          </h1>
+          <!-- Cards -->
+          <div
+            class="cards-wrapper w-full xl:w-[1536px] flex flex-wrap gap-6 justify-center"
+          >
+            <div
+              class="card-detalle w-80 h-80 flex flex-col gap-2 bg-black bg-opacity-60 border border-[#204E56] hover:border-slate-300 transition-all rounded-2xl p-8 relative overflow-hidden group"
+            >
+              <div
+                class="continue-graphic group-hover:continue-graphic-hover transition-all absolute w-80 h-80 bottom-20 left-20 z-0"
+              ></div>
+              <h1 class="text-2xl font-medium text-[#EEBE44]">01</h1>
+              <h2
+                class="text-3xl bg-gradient-to-b from-white to-slate-500 text-transparent bg-clip-text py-3"
+              >
+                Tabulador para autocompletar
+              </h2>
+              <p class="text-white">
+                Continue completa líneas individuales o secciones completas de
+                código en cualquier lenguaje de programación a medida que
+                escribes
+              </p>
+            </div>
+            <div
+              class="card-detalle w-80 h-80 flex flex-col gap-2 bg-black bg-opacity-60 border border-[#204E56] hover:border-slate-300 transition-all rounded-2xl p-8 relative overflow-hidden group"
+            >
+              <div
+                class="continue-graphic group-hover:continue-graphic-hover transition-all absolute w-80 h-80 bottom-20 left-20 z-0"
+              ></div>
+              <h1 class="text-2xl font-medium text-[#EEBE44]">02</h1>
+              <h2
+                class="text-3xl bg-gradient-to-b from-white to-slate-500 text-transparent bg-clip-text py-3"
+              >
+                Referencia y chat
+              </h2>
+              <p class="text-white">
+                Adjunta código u otro contexto para hacer preguntas sobre
+                funciones, archivos, toda la base de código y más
+              </p>
+            </div>
+            <div
+              class="card-detalle w-80 h-80 flex flex-col gap-2 bg-black bg-opacity-60 border border-[#204E56] hover:border-slate-300 transition-all rounded-2xl p-8 relative overflow-hidden group"
+            >
+              <div
+                class="continue-graphic group-hover:continue-graphic-hover transition-all absolute w-80 h-80 bottom-20 left-20 z-0"
+              ></div>
+              <h1 class="text-2xl font-medium text-[#EEBE44]">03</h1>
+              <h2
+                class="text-3xl bg-gradient-to-b from-white to-slate-500 text-transparent bg-clip-text py-3"
+              >
+              Refactor en un click
+              </h2>
+              <p class="text-white">
+                Resalta secciones de código y presiona un atajo de teclado para
+                reescribir el código desde el lenguaje natural
+              </p>
+            </div>
+            <div
+              class="card-detalle w-80 h-80 flex flex-col gap-2 bg-black bg-opacity-60 border border-[#204E56] hover:border-slate-300 transition-all rounded-2xl p-8 relative overflow-hidden group"
+            >
+              <div
+                class="continue-graphic group-hover:continue-graphic-hover transition-all absolute w-80 h-80 bottom-20 left-20 z-0"
+              ></div>
+              <h1 class="text-2xl font-medium text-[#EEBE44]">04</h1>
+              <h2
+                class="text-3xl bg-gradient-to-b from-white to-slate-500 text-transparent bg-clip-text py-3"
+              >
+              Chatbot en tu IDE
+              </h2>
+              <p class="text-white">Para utilizar ChatGPT de manera privada y segura, integrado directamente en tu entorno de programación, evitando saltar entre aplicaciones.</p>
+            </div>
+            <div
+              class="card-detalle w-80 h-80 flex flex-col gap-2 bg-black bg-opacity-60 border border-[#204E56] hover:border-slate-300 transition-all rounded-2xl p-8 relative overflow-hidden group"
+            >
+              <div
+                class="continue-graphic group-hover:continue-graphic-hover transition-all absolute w-80 h-80 bottom-20 left-20 z-0"
+              ></div>
+              <h1 class="text-2xl font-medium text-[#EEBE44]">05</h1>
+              <h2
+                class="text-3xl bg-gradient-to-b from-white to-slate-500 text-transparent bg-clip-text py-3"
+              >
+                Mantente en el flujo mientras codificas
+              </h2>
+              <p class="text-white">
+                eliminando las barreras que bloquean la productividad al
+                construir software
+              </p>
+            </div>
+            <div
+              class="card-detalle w-80 h-80 flex flex-col gap-2 bg-black bg-opacity-60 border border-[#204E56] hover:border-slate-300 transition-all rounded-2xl p-8 relative overflow-hidden group"
+            >
+              <div
+                class="continue-graphic group-hover:continue-graphic-hover transition-all absolute w-80 h-80 bottom-20 left-20 z-0"
+              ></div>
+              <h1 class="text-2xl font-medium text-[#EEBE44]">06</h1>
+              <h2
+                class="text-3xl bg-gradient-to-b from-white to-slate-500 text-transparent bg-clip-text py-3"
+              >
+                Acelera el desarrollo
+              </h2>
+              <p class="text-white">
+                ahora con un sistema plug-and-play que facilita el inicio y se
+                integra con todo tu stack
+              </p>
+            </div>
+            <div
+              class="card-detalle w-80 h-80 flex flex-col gap-2 bg-black bg-opacity-60 border border-[#204E56] hover:border-slate-300 transition-all rounded-2xl p-8 relative overflow-hidden group"
+            >
+              <div
+                class="continue-graphic group-hover:continue-graphic-hover transition-all absolute w-80 h-80 bottom-20 left-20 z-0"
+              ></div>
+              <h1 class="text-2xl font-medium text-[#EEBE44]">07</h1>
+              <h2
+                class="text-3xl bg-gradient-to-b from-white to-slate-500 text-transparent bg-clip-text py-3"
+              >
+                Conviértete en un líder en IA
+              </h2>
+              <p class="text-white">
+                configurando tu sistema de desarrollo de software para que
+                evolucione a medida que surjan nuevas capacidades
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End wrapper detalles-->
+      </section>
+      <section
+        class="instalacion-ide w-full text-white flex items-center justify-center"
+      >
+        <div
+          class="container flex flex-col md:flex-row items-center justify-center gap-10 md:gap-6 w-full h-[480px]"
+        >
+          <div class="text-content gap-6 md:gap-3 w-full md:w-[640px]">
+            <h1
+              class="text-5xl text-center md:text-start font-extrabold bg-gradient-to-b from-white to-slate-500 text-transparent bg-clip-text py-3"
+            >
+              Usa Continue en tu entorno de desarrollo preferido
+            </h1>
+            <h3 class="text-lg text-white text-center md:text-start">
+              Continue se integra con IDEs populares como VS Code y JetBrains mediante extensiones y plugins dedicados, mejorando tu experiencia de programación independientemente de las herramientas que utilices.
+            </h3>
+          </div>
+          <!--End text-content-->
+          <div
+            class="IDEs w-full md:w-[640px] gap-6 md:gap-12 xl:gap-6 flex flex-row md:flex-col xl:flex-row items-center justify-center"
+          >
+            <div class="vscode w-full md:w-72 gap-2 flex flex-col items-center">
+              <div class="flex flex-col items-center gap-px">
+                <div class="bg-vscode bg-no-repeat bg-center w-12 h-12"></div>
+                <h1
+                  class="text-2xl font-medium bg-gradient-to-b from-white to-slate-500 text-transparent bg-clip-text py-3"
+                >
+                  VS Code
+                </h1>
+              </div>
+              <a
+                href="#"
+                class="enlace-descarga text-white flex gap-1 group hover:text-yellow-400"
+                >Instalar y configurar
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right group-hover:stroke-yellow-400"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M17 7l-10 10" />
+                    <path d="M8 7l9 0l0 9" />
+                  </svg></div
+              ></a>
+            </div>
+            <!--End vscode-->
+            <div
+              class="jetbrains w-full md:w-72 gap-2 flex flex-col items-center"
+            >
+              <div class="flex flex-col items-center gap-px">
+                <div
+                  class="bg-jetbrains bg-no-repeat bg-center w-12 h-12"
+                ></div>
+                <h1
+                  class="text-2xl font-medium bg-gradient-to-b from-white to-slate-500 text-transparent bg-clip-text py-3"
+                >
+                  Jetbrains
+                </h1>
+              </div>
+              <a
+                href="#"
+                class="enlace-descarga text-white flex gap-1 group hover:text-yellow-400"
+                >Instalar y configurar
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right group-hover:stroke-yellow-400"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M17 7l-10 10" />
+                    <path d="M8 7l9 0l0 9" />
+                  </svg></div
+              ></a>
+            </div>
+            <!--End vscode-->
+          </div>
+        </div>
+      </section>
+      <section
+        class="alternativa relative w-full text-white flex items-center justify-center px-4 md:px-0"
+      >
+        <div
+          class="bg-logo-mono bg-no-repeat bg-center absolute w-[628px] h-[623px] top-0 left-2/6"
+        ></div>
+        <div
+          class="contenido container flex flex-col items-center justify-center gap-6 h-[640px]"
+        >
+          <div class="text-content gap-6 md:gap-3 w-full md:w-[860px]">
+            <h1
+              class="text-5xl text-center font-extrabold bg-gradient-to-b from-white to-slate-500 text-transparent bg-clip-text py-3"
+            >
+              Tu alternativa a OpenAI platform
+            </h1>
+            <h2
+              class="text-2xl text-center font-medium text-[#E47E34] bg-clip-text py-3"
+            >
+              Si eres desarrollador cubano esta es la solución perfecta para ti
+            </h2>
+            <h3 class="text-lg text-white text-center">
+              PlataformIA es tu puerta de entrada al desarrollo de aplicaciones de Inteligencia Artificial. Ofrece acceso a APIs para utilizar modelos IA avanzados (Spark, Radiance, Supernova, Images, Embeddings) que permiten realizar una amplia gama de tareas, desde generación de textos e imágenes hasta tareas avanzadas de NLP. Con costos en CUP, sin necesidad de VPN y con herramientas para monitoreo, PlataformIA es la plataforma ideal para impulsar tus aplicaciones de IA.
+            </h3>
+          </div>
+        </div>
+      </section>
+      <section class="w-full h-auto flex justify-center px-4 py-8">
+        <div
+          class="planes-container container w-full flex justify-center flex-wrap gap-6"
+        >
+          <a href="#" class="group">
+            <div
+              class="card-detalle w-full md:w-72 h-80 flex flex-col gap-2 bg-black bg-opacity-60 group-hover:bg-opacity-70 border border-[#204E56] hover:border-slate-300 transition-all rounded-2xl p-8 relative overflow-hidden group"
+            >
+              <div
+                class="plataformia-graphic group-hover:plataformia-graphic-hover transition-all absolute w-80 h-80 bottom-20 left-20 z-0"
+              ></div>
+              <h1 class="text-2xl font-medium text-[#E47E34]">50 CUP</h1>
+              <div class="wrapper flex flex-col gap-px h-full">
+                <div class="title-wrapper flex items-center gap-1">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-script stroke-slate-400"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M17 20h-11a3 3 0 0 1 0 -6h11a3 3 0 0 0 0 6h1a3 3 0 0 0 3 -3v-11a2 2 0 0 0 -2 -2h-10a2 2 0 0 0 -2 2v8"
+                      />
+                    </svg>
+                  </div>
+                  <h2
+                    class="text-2xl bg-gradient-to-b from-white to-slate-500 text-transparent bg-clip-text py-3"
+                  >
+                    Embeddings
+                  </h2>
+                </div>
+                <p class="text-white">
+                  Para desarrollar bases de conocimiento vectoriales que
+                  posibilita la búsqueda semántica mas avanzada del mercado
+                </p>
+                <p class="text-[#E47E34]">1 Millon de tokens para texto</p>
+              </div>
+              <div class="flex justify-end text-white gap-1 items-center group">
+                <span>Comprar</span>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right group-hover:translate-x-1 transition-all duration-200"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M5 12l14 0" />
+                    <path d="M13 18l6 -6" />
+                    <path d="M13 6l6 6" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="group">
+            <div
+              class="card-detalle w-full md:w-72 h-80 flex flex-col gap-2 bg-black bg-opacity-60 group-hover:bg-opacity-70 border border-[#204E56] hover:border-slate-300 transition-all rounded-2xl p-8 relative overflow-hidden group"
+            >
+              <div
+                class="plataformia-graphic group-hover:plataformia-graphic-hover transition-all absolute w-80 h-80 bottom-20 left-20 z-0"
+              ></div>
+              <h1 class="text-2xl font-medium text-[#E47E34]">100 CUP</h1>
+              <div class="wrapper flex flex-col gap-px h-full">
+                <div class="title-wrapper flex items-center gap-1">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-bolt stroke-slate-400"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11" />
+                    </svg>
+                  </div>
+                  <h2
+                    class="text-2xl bg-gradient-to-b from-white to-slate-500 text-transparent bg-clip-text py-3"
+                  >
+                    Spark
+                  </h2>
+                </div>
+                <p class="text-white">
+                  Ideal para tareas simples como resumir texto, correcciones de
+                  ortografía y preguntas sencillas
+                </p>
+                <p class="text-[#E47E34]">1 Millon de tokens para texto</p>
+              </div>
+              <div class="flex justify-end text-white gap-1 items-center group">
+                <span>Comprar</span>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right group-hover:translate-x-1 transition-all duration-200"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M5 12l14 0" />
+                    <path d="M13 18l6 -6" />
+                    <path d="M13 6l6 6" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="group">
+            <div
+              class="card-detalle w-full md:w-72 h-80 flex flex-col gap-2 bg-black bg-opacity-60 group-hover:bg-opacity-70 border border-[#204E56] hover:border-slate-300 transition-all rounded-2xl p-8 relative overflow-hidden group"
+            >
+              <div
+                class="plataformia-graphic group-hover:plataformia-graphic-hover transition-all absolute w-80 h-80 bottom-20 left-20 z-0"
+              ></div>
+              <h1 class="text-2xl font-medium text-[#E47E34]">300 CUP</h1>
+              <div class="wrapper flex flex-col gap-px h-full">
+                <div class="title-wrapper flex items-center gap-1">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-sparkles stroke-slate-400"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M16 18a2 2 0 0 1 2 2a2 2 0 0 1 2 -2a2 2 0 0 1 -2 -2a2 2 0 0 1 -2 2zm0 -12a2 2 0 0 1 2 2a2 2 0 0 1 2 -2a2 2 0 0 1 -2 -2a2 2 0 0 1 -2 2zm-7 12a6 6 0 0 1 6 -6a6 6 0 0 1 -6 -6a6 6 0 0 1 -6 6a6 6 0 0 1 6 6z"
+                      />
+                    </svg>
+                  </div>
+                  <h2
+                    class="text-2xl bg-gradient-to-b from-white to-slate-500 text-transparent bg-clip-text py-3"
+                  >
+                    Radiance
+                  </h2>
+                </div>
+                <p class="text-white">
+                  Maneja la mayoría de las tareas diarias como traducción,
+                  investigación y escritura creativa
+                </p>
+                <p class="text-[#E47E34]">1 Millon de tokens para chat</p>
+              </div>
+              <div class="flex justify-end text-white gap-1 items-center group">
+                <span>Comprar</span>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right group-hover:translate-x-1 transition-all duration-200"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M5 12l14 0" />
+                    <path d="M13 18l6 -6" />
+                    <path d="M13 6l6 6" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="group">
+            <div
+              class="card-detalle w-full md:w-72 h-80 flex flex-col gap-2 bg-black bg-opacity-60 group-hover:bg-opacity-70 border border-[#204E56] hover:border-slate-300 transition-all rounded-2xl p-8 relative overflow-hidden group"
+            >
+              <div
+                class="plataformia-graphic group-hover:plataformia-graphic-hover transition-all absolute w-80 h-80 bottom-20 left-20 z-0"
+              ></div>
+              <h1 class="text-2xl font-medium text-[#E47E34]">350 CUP</h1>
+              <div class="wrapper flex flex-col gap-px h-full">
+                <div class="title-wrapper flex items-center gap-1">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-photo stroke-slate-400"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M15 8h.01" />
+                      <path
+                        d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12z"
+                      />
+                      <path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" />
+                      <path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" />
+                    </svg>
+                  </div>
+                  <h2
+                    class="text-2xl bg-gradient-to-b from-white to-slate-500 text-transparent bg-clip-text py-3"
+                  >
+                    Images
+                  </h2>
+                </div>
+                <p class="text-white">
+                  Capaz de crear una imágen única y precisa con características
+                  detalladas y realistas
+                </p>
+                <p class="text-[#E47E34]">100 tokens para imágenes</p>
+              </div>
+              <div class="flex justify-end text-white gap-1 items-center group">
+                <span>Comprar</span>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right group-hover:translate-x-1 transition-all duration-200"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M5 12l14 0" />
+                    <path d="M13 18l6 -6" />
+                    <path d="M13 6l6 6" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="group">
+            <div
+              class="card-detalle w-full md:w-72 h-80 flex flex-col gap-2 bg-black bg-opacity-60 group-hover:bg-opacity-70 border border-[#204E56] hover:border-slate-300 transition-all rounded-2xl p-8 relative overflow-hidden group"
+            >
+              <div
+                class="plataformia-graphic group-hover:plataformia-graphic-hover transition-all absolute w-80 h-80 bottom-20 left-20 z-0"
+              ></div>
+              <h1 class="text-2xl font-medium text-[#E47E34]">6000 CUP</h1>
+              <div class="wrapper flex flex-col gap-px h-full">
+                <div class="title-wrapper flex items-center gap-1">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-brain stroke-slate-400"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M15.5 13a3.5 3.5 0 0 0 -3.5 3.5v1a3.5 3.5 0 0 0 7 0v-1.8"
+                      />
+                      <path
+                        d="M8.5 13a3.5 3.5 0 0 1 3.5 3.5v1a3.5 3.5 0 0 1 -7 0v-1.8"
+                      />
+                      <path d="M17.5 16a3.5 3.5 0 0 0 0 -7h-.5" />
+                      <path d="M19 9.3v-2.8a3.5 3.5 0 0 0 -7 0" />
+                      <path d="M6.5 16a3.5 3.5 0 0 1 0 -7h.5" />
+                      <path d="M5 9.3v-2.8a3.5 3.5 0 0 1 7 0v10" />
+                    </svg>
+                  </div>
+                  <h2
+                    class="text-2xl bg-gradient-to-b from-white to-slate-500 text-transparent bg-clip-text py-3"
+                  >
+                    Supernova
+                  </h2>
+                </div>
+                <p class="text-white">
+                  Ideal para tareas complejas como análisis de datos,
+                  programación y automatización compleja
+                </p>
+                <p class="text-[#E47E34]">1 Millon de tokens para chat</p>
+              </div>
+              <div class="flex justify-end text-white gap-1 items-center group">
+                <span>Comprar</span>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right group-hover:translate-x-1 transition-all duration-200"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M5 12l14 0" />
+                    <path d="M13 18l6 -6" />
+                    <path d="M13 6l6 6" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="flex w-full h-[186px] justify-center items-center absolute">
+      <div
+        class="footer-wrapper container flex flex-col md:flex-row w-full h-full justify-between items-center shrink-0 px-4 md:px-0 py-6"
+      >
+        <div class="logo w-[181px] h-[41.162px] shrink-0"></div>
+        <div class="flex text-white gap-2">
+          <span>© 2024 Avangenio.</span>
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+              <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+              />
+              <path d="M8 11l0 5" />
+              <path d="M8 8l0 .01" />
+              <path d="M12 16l0 -5" />
+              <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+              />
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-discord"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+              <path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+              <path
+                d="M15.5 17c0 1 1.5 3 2 3c1.5 0 2.833 -1.667 3.5 -3c.667 -1.667 .5 -5.833 -1.5 -11.5c-1.457 -1.015 -3 -1.34 -4.5 -1.5l-.972 1.923a11.913 11.913 0 0 0 -4.053 0l-.975 -1.923c-1.5 .16 -3.043 .485 -4.5 1.5c-2 5.667 -2.167 9.833 -1.5 11.5c.667 1.333 2 3 3.5 3c.5 0 2 -2 2 -3"
+              />
+              <path d="M7 16.5c3.5 1 6.5 1 10 0" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "tail": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.6"
+  },
+  "dependencies": {
+    "@tabler/core": "^1.0.0-beta20",
+    "@tabler/icons-sprite": "^3.11.0"
+  }
+}
